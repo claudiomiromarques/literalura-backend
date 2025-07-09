@@ -42,13 +42,8 @@ Desenvolver um sistema Java que permita ao usuário interagir com um **catálogo
 
 ## 🔄 Estrutura do Projeto
 
-literalura/
-├── model/ # Entidades JPA (Livro, Autor, Tópico)
-├── repository/ # Repositórios Spring Data
-├── service/ # Regras de negócio e consumo de APIs
-├── principal/ # Classe Principal com menu interativo
-├── resources/ # application.properties
-└── LiteraluraApplication.java
+![image](https://github.com/user-attachments/assets/8504096f-2630-43ab-a7c7-27c45017e49e)
+
 
 ---
 
