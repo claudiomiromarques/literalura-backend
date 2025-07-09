@@ -42,8 +42,15 @@ Desenvolver um sistema Java que permita ao usuário interagir com um **catálogo
 
 ## 🔄 Estrutura do Projeto
 
-![image](https://github.com/user-attachments/assets/8504096f-2630-43ab-a7c7-27c45017e49e)
-
+```
+literalura/
+├── model/               # Entidades JPA (Livro, Autor, Tópico)
+├── repository/          # Repositórios Spring Data
+├── service/             # Regras de negócio e consumo de APIs
+├── principal/           # Classe Principal com menu interativo
+├── resources/           # application.properties
+└── LiteraluraApplication.java
+```
 
 ---
 
@@ -59,14 +66,30 @@ Desenvolver um sistema Java que permita ao usuário interagir com um **catálogo
 
 1. **Clone o projeto:**
    ```bash
-   git clone  https://github.com/claudiomiromarques/literalura-backend.git
+   git clone https://github.com/seu-usuario/literalura.git
    cd literalura
+   ```
 
-Configure o banco de dados:
-Edite o arquivo src/main/resources/application.properties com as credenciais do seu banco de dados.
+2. **Configure o banco de dados:**
+   Edite o arquivo `src/main/resources/application.properties` com as credenciais do seu banco de dados.
 
-Interação via console..
+3. **Compile o projeto:**
+   ```bash
+   mvn clean install
+   ```
 
+4. **Execute a aplicação:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+---
+
+## 💬 Interação via Console
+
+Ao iniciar a aplicação, será exibido um menu com as opções abaixo:
+
+```
 *** LiterAlura - Catálogo de Livros ***
 1 - Buscar livro pelo título e salvar
 2 - Listar livros registrados
@@ -78,18 +101,26 @@ Interação via console..
 8 - Exibir estatísticas de downloads
 9 - Listar autores por ano de nascimento
 0 - Sair
+```
 
-📈 Backlog / Em desenvolvimento
-Integração com outras APIs literárias
+---
 
-Interface web (Spring MVC ou Thymeleaf)
+## 📈 Backlog / Em desenvolvimento
 
-Testes automatizados com JUnit
+- Integração com outras APIs literárias
+- Interface web (Spring MVC ou Thymeleaf)
+- Testes automatizados com JUnit
 
-📜 Licença
-Este projeto é licenciado sob os termos da MIT License.
+---
 
-👨‍💻 Desenvolvido por
-Projeto prático da formação Java + Spring da Alura, com adaptações e melhorias próprias.
+## 📜 Licença
 
-   
+Este projeto é licenciado sob os termos da [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+Projeto prático da formação Java + Spring da [Alura](https://www.alura.com.br/), com adaptações e melhorias próprias.
+
+---
